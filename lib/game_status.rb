@@ -58,8 +58,9 @@ def full?(board)
 end
 
 def draw?(board)
+  Console.log(won?(board))
   if won?().is_a? Array
-    Console.log(won?(board))
+    
     return false
   elsif !won?(board) && full?(board)
     return true
