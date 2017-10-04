@@ -48,8 +48,8 @@ end
 
 def full?(board)
   i=0
-  loop do
-    if(!position_taken?(board,i))
+  while i<board.size
+    if !position_taken?(board,i)
       return false
     end
     i+=1
