@@ -59,7 +59,7 @@ end
 
 def draw?(board)
   if(won?(board).is_a? Array)
-    console.log(won?(board))
+    Console.log(won?(board))
     return false
   elsif(!won?(board) && full?(board))
     return true
