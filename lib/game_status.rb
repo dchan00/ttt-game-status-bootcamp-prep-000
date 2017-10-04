@@ -58,7 +58,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if(won?(board).is_a? Array)
+  if(!won?(board).is_a? Array)
     return "asdfasdf"
   elsif(!won?(board) && full?(board))
     return true
