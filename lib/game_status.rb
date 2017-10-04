@@ -74,3 +74,6 @@ end
 
 def winner(board)
 end
+
+
+board = ["X", "O", "X", "O", "X", "O", "X", "X", "O"]
