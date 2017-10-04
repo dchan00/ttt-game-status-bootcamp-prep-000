@@ -24,7 +24,7 @@ def won?(board)
   all_taken = board.all? do |ele|
     ele == "X" || ele == "O"
   end
-  if(all_empty)
+  if(all_empty || all_taken)
     return false
   end
 
