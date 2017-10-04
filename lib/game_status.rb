@@ -60,6 +60,7 @@ end
 def draw?(board)
   if(won?(board).is_a? Array)
     return false
+  end
   if(!won?(board) && full?(board))
     return true
   elsif(!won?(board) && !full?(board))
