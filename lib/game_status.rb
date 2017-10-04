@@ -75,4 +75,4 @@ end
 def winner(board)
 end
 
-Console.log(won?(board))
+console.log(won?(board))
