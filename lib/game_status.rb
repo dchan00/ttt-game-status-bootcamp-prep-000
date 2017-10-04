@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   all_taken =false
-  
+
 
   all_empty = board.all? do |ele|
     ele == " "
