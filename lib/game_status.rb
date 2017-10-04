@@ -24,7 +24,7 @@ def won?(board)
   all_taken = board.all? do |ele|
     ele == "X" || ele == "O"
   end
-  
+
   if(all_empty || all_taken)
     return false
   end
@@ -44,4 +44,13 @@ def won?(board)
       false
     end
   end
+end
+
+def full?(board)
+  for(let i=0; i<board.size; i++)
+    if(!position_taken?(board,i))
+      return false
+    end
+  end
+  return true
 end
