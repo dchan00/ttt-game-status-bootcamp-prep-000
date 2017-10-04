@@ -47,7 +47,7 @@ def won?(board)
 end
 
 def full?(board)
-  for (let i=0; i<board.size; i++)
+  for (var i=0; i<board.size; i++)
     if(!position_taken?(board,i))
       return false
     end
