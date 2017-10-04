@@ -21,9 +21,11 @@ def won?(board)
   
 
   all_empty = board.all? do |ele|
-    ele == 'X'
+    ele == " "
   end
-  
+  if(all_empty)
+    return false
+  end
 
   WIN_COMBINATIONS.each do |array|
     position_1=board[array[0]]
