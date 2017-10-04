@@ -77,4 +77,4 @@ end
 
 
 board = ["X", "O", "X", "O", "X", "O", "X", "X", "O"]
-console.log(won?(board))
+puts won?(board))
