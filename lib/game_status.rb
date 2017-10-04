@@ -16,18 +16,21 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.each do |ele|
-    if ele==" "
-      return false
-    end
+
+  all_taken =false
+  all_empty =false
+
+  board.all? do |ele|
+    ele == 'X'
   end
   
+
   WIN_COMBINATIONS.each do |array|
     position_1=board[array[0]]
     position_2=board[array[1]]
     position_3=board[array[2]]
 
-    
+
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return array
