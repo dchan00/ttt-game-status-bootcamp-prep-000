@@ -14,3 +14,15 @@ WIN_COMBINATIONS = [
     [0,4,8],
     [2,4,6]
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.each|array| do
+    position_1=board[array[0]]
+    position_2=board[array[1]]
+    position_3=board[array[2]]
+
+    if(position_1 == "X" && position_2 == "X" && position_3 == "X")
+      return array
+    end
+  end
+end
