@@ -16,18 +16,25 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  board.each do |ele|
+    if ele==" "
+      return false
+    end
+  end
+  
   WIN_COMBINATIONS.each do |array|
     position_1=board[array[0]]
     position_2=board[array[1]]
     position_3=board[array[2]]
 
+    
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return array
     elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       return array
     else
-      return false
+      false
     end
   end
 end
