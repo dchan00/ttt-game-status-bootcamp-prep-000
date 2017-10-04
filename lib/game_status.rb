@@ -17,11 +17,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  all_taken =false
-
-
   all_empty = board.all? do |ele|
     ele == " "
+  end
+
+  all_taken = board.all? do |ele|
+    ele == "X" || ele == "O"
   end
   if(all_empty)
     return false
