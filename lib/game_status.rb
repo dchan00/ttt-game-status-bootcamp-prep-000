@@ -21,8 +21,6 @@ def won?(board)
     ele == " "
   end
 
-
-
   if(all_empty)
     return false
   end
