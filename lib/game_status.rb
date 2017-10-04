@@ -21,10 +21,11 @@ def won?(board)
     position_2=board[array[1]]
     position_3=board[array[2]]
 
+    
     if((position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O"))
       return array
     else
-      false
+      return false
     end
   end
 end
